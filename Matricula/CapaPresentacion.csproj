@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AE94F72-CEB3-4BE8-A38D-7EA75DE88C90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Matricula</RootNamespace>
+    <AssemblyName>Matricula</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alumno\FrmAlumNoMatr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmAlumNoMatr.Designer.cs">
+      <DependentUpon>FrmAlumNoMatr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmMatricula.Designer.cs">
+      <DependentUpon>FrmMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmMenuAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmMenuAlumno.Designer.cs">
+      <DependentUpon>FrmMenuAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmSeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmSeccion.Designer.cs">
+      <DependentUpon>FrmSeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmVistaAlum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmVistaAlum.Designer.cs">
+      <DependentUpon>FrmVistaAlum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmIEAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmIEAlumno.Designer.cs">
+      <DependentUpon>FrmIEAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmInfoAlum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmInfoAlum.Designer.cs">
+      <DependentUpon>FrmInfoAlum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmIngApode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmIngApode.Designer.cs">
+      <DependentUpon>FrmIngApode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\FrmListarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno\FrmListarAlumno.Designer.cs">
+      <DependentUpon>FrmListarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carrera\FrmCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrera\FrmCarrera.Designer.cs">
+      <DependentUpon>FrmCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UCBuscarAlum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UCBuscarAlum.Designer.cs">
+      <DependentUpon>UCBuscarAlum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UCBuscarDocen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UCBuscarDocen.Designer.cs">
+      <DependentUpon>UCBuscarDocen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UCBuscarEmple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UCBuscarEmple.Designer.cs">
+      <DependentUpon>UCBuscarEmple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UCBuscarUsu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UCBuscarUsu.Designer.cs">
+      <DependentUpon>UCBuscarUsu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docente\FrmIEDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente\FrmIEDocente.Designer.cs">
+      <DependentUpon>FrmIEDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docente\FrmInfoDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente\FrmInfoDocente.Designer.cs">
+      <DependentUpon>FrmInfoDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docente\FrmListarDocen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente\FrmListarDocen.Designer.cs">
+      <DependentUpon>FrmListarDocen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docente\FrmMenuDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente\FrmMenuDocente.Designer.cs">
+      <DependentUpon>FrmMenuDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docente\FrmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente\FrmNotas.Designer.cs">
+      <DependentUpon>FrmNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docente\FrmSueldoDocen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente\FrmSueldoDocen.Designer.cs">
+      <DependentUpon>FrmSueldoDocen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docente\FrmVistaDocen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docente\FrmVistaDocen.Designer.cs">
+      <DependentUpon>FrmVistaDocen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FrmBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FrmBackUp.Designer.cs">
+      <DependentUpon>FrmBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FrmIEEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FrmIEEmpleado.Designer.cs">
+      <DependentUpon>FrmIEEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FrmListarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FrmListarEmpleado.Designer.cs">
+      <DependentUpon>FrmListarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FrmMenuEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FrmMenuEmpleado.Designer.cs">
+      <DependentUpon>FrmMenuEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FrmRestoreBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FrmRestoreBackUp.Designer.cs">
+      <DependentUpon>FrmRestoreBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FrmVistaEmple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FrmVistaEmple.Designer.cs">
+      <DependentUpon>FrmVistaEmple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmIEUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmIEUsuario.Designer.cs">
+      <DependentUpon>FrmIEUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmListarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmListarUsuario.Designer.cs">
+      <DependentUpon>FrmListarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmRecuperar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmRecuperar.Designer.cs">
+      <DependentUpon>FrmRecuperar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmVistaUsu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmVistaUsu.Designer.cs">
+      <DependentUpon>FrmVistaUsu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Alumno\FrmAlumNoMatr.resx">
+      <DependentUpon>FrmAlumNoMatr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmMatricula.resx">
+      <DependentUpon>FrmMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmMenuAlumno.resx">
+      <DependentUpon>FrmMenuAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmSeccion.resx">
+      <DependentUpon>FrmSeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmVistaAlum.resx">
+      <DependentUpon>FrmVistaAlum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmIEAlumno.resx">
+      <DependentUpon>FrmIEAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmInfoAlum.resx">
+      <DependentUpon>FrmInfoAlum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmIngApode.resx">
+      <DependentUpon>FrmIngApode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno\FrmListarAlumno.resx">
+      <DependentUpon>FrmListarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carrera\FrmCarrera.resx">
+      <DependentUpon>FrmCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UCBuscarAlum.resx">
+      <DependentUpon>UCBuscarAlum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UCBuscarDocen.resx">
+      <DependentUpon>UCBuscarDocen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UCBuscarEmple.resx">
+      <DependentUpon>UCBuscarEmple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UCBuscarUsu.resx">
+      <DependentUpon>UCBuscarUsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente\FrmIEDocente.resx">
+      <DependentUpon>FrmIEDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente\FrmInfoDocente.resx">
+      <DependentUpon>FrmInfoDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente\FrmListarDocen.resx">
+      <DependentUpon>FrmListarDocen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente\FrmMenuDocente.resx">
+      <DependentUpon>FrmMenuDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente\FrmNotas.resx">
+      <DependentUpon>FrmNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente\FrmSueldoDocen.resx">
+      <DependentUpon>FrmSueldoDocen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docente\FrmVistaDocen.resx">
+      <DependentUpon>FrmVistaDocen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FrmBackUp.resx">
+      <DependentUpon>FrmBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FrmIEEmpleado.resx">
+      <DependentUpon>FrmIEEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FrmListarEmpleado.resx">
+      <DependentUpon>FrmListarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FrmRestoreBackUp.resx">
+      <DependentUpon>FrmRestoreBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FrmVistaEmple.resx">
+      <DependentUpon>FrmVistaEmple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmIEUsuario.resx">
+      <DependentUpon>FrmIEUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmListarUsuario.resx">
+      <DependentUpon>FrmListarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmRecuperar.resx">
+      <DependentUpon>FrmRecuperar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmVistaUsu.resx">
+      <DependentUpon>FrmVistaUsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaComun\CapaComun.csproj">
+      <Project>{64f97323-7cc8-4b13-aa31-985e9b966d7d}</Project>
+      <Name>CapaComun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaMatricula\CapaNegocio.csproj">
+      <Project>{124397eb-e555-4d9f-b396-9ff26f618f8d}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
