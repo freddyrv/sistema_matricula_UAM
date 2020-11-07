@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace Matricula.Controles {
     public partial class UCBuscarDocen : UserControl {
         FrmMenu menu = new FrmMenu();
+        CapaNegocio.CNDocente docente = new CapaNegocio.CNDocente();
 
             public UCBuscarDocen() {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace Matricula.Controles {
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            GridDocen.DataSource = docente.ListarDocen();
         }
     }
 }

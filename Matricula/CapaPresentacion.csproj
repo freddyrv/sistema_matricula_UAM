@@ -197,12 +197,6 @@
     <Compile Include="Empleado\FrmListarEmpleado.Designer.cs">
       <DependentUpon>FrmListarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empleado\FrmMenuEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Empleado\FrmMenuEmpleado.Designer.cs">
-      <DependentUpon>FrmMenuEmpleado.cs</DependentUpon>
-    </Compile>
     <Compile Include="Empleado\FrmRestoreBackUp.cs">
       <SubType>Form</SubType>
     </Compile>
