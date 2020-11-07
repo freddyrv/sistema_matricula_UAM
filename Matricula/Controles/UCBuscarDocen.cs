@@ -10,8 +10,27 @@ using System.Windows.Forms;
 
 namespace Matricula.Controles {
     public partial class UCBuscarDocen : UserControl {
-        public UCBuscarDocen() {
+        FrmMenu menu = new FrmMenu();
+
+            public UCBuscarDocen() {
             InitializeComponent();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Volviendo al menu!");
+            menu.Show();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            this.txtape.Text = "";
+            this.txtCod.Text = "";
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
