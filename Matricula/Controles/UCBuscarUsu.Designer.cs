@@ -31,7 +31,6 @@
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtape = new System.Windows.Forms.TextBox();
@@ -117,7 +116,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.groupBox1.Controls.Add(this.btnMenu);
             this.groupBox1.Controls.Add(this.btnLimpiar);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.txtape);
@@ -132,7 +130,6 @@
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar por:";
-
             // 
             // btnLimpiar
             // 
@@ -222,6 +219,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Button btnMenu;
     }
 }

@@ -33,5 +33,10 @@ namespace Matricula.Controles {
         {
             GridDocen.DataSource = docente.ListarDocen();
         }
+
+        private void FrmUCBuscarDocente_Load(object sender, EventArgs e)
+        {
+            GridDocen.DataSource = docente.ListarDocen();
+        }
     }
 }

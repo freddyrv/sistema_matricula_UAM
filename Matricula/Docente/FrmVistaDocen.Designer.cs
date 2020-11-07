@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,9 +39,18 @@
             this.cboSeccion = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.GridDocen = new System.Windows.Forms.DataGridView();
+            this.mATRICULADataSet = new Matricula.MATRICULADataSet();
+            this.mAESTROBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mAESTROTableAdapter = new Matricula.MATRICULADataSetTableAdapters.MAESTROTableAdapter();
+            this.iDMAESTRODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDEMPLEADODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aREADOCENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDUSUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnSuperior.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridDocen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAESTROBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMenu
@@ -152,6 +162,7 @@
             // 
             // GridDocen
             // 
+            this.GridDocen.AutoGenerateColumns = false;
             this.GridDocen.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.GridDocen.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridDocen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
@@ -168,6 +179,12 @@
             this.GridDocen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridDocen.ColumnHeadersHeight = 30;
             this.GridDocen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.GridDocen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDMAESTRODataGridViewTextBoxColumn,
+            this.iDEMPLEADODataGridViewTextBoxColumn,
+            this.aREADOCENDataGridViewTextBoxColumn,
+            this.iDUSUDataGridViewTextBoxColumn});
+            this.GridDocen.DataSource = this.mAESTROBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,6 +219,52 @@
             this.GridDocen.TabIndex = 15;
             this.GridDocen.DoubleClick += new System.EventHandler(this.GridDocen_DoubleClick);
             // 
+            // mATRICULADataSet
+            // 
+            this.mATRICULADataSet.DataSetName = "MATRICULADataSet";
+            this.mATRICULADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mAESTROBindingSource
+            // 
+            this.mAESTROBindingSource.DataMember = "MAESTRO";
+            this.mAESTROBindingSource.DataSource = this.mATRICULADataSet;
+            // 
+            // mAESTROTableAdapter
+            // 
+            this.mAESTROTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDMAESTRODataGridViewTextBoxColumn
+            // 
+            this.iDMAESTRODataGridViewTextBoxColumn.DataPropertyName = "ID_MAESTRO";
+            this.iDMAESTRODataGridViewTextBoxColumn.HeaderText = "ID_MAESTRO";
+            this.iDMAESTRODataGridViewTextBoxColumn.Name = "iDMAESTRODataGridViewTextBoxColumn";
+            this.iDMAESTRODataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDMAESTRODataGridViewTextBoxColumn.Width = 104;
+            // 
+            // iDEMPLEADODataGridViewTextBoxColumn
+            // 
+            this.iDEMPLEADODataGridViewTextBoxColumn.DataPropertyName = "ID_EMPLEADO";
+            this.iDEMPLEADODataGridViewTextBoxColumn.HeaderText = "ID_EMPLEADO";
+            this.iDEMPLEADODataGridViewTextBoxColumn.Name = "iDEMPLEADODataGridViewTextBoxColumn";
+            this.iDEMPLEADODataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDEMPLEADODataGridViewTextBoxColumn.Width = 111;
+            // 
+            // aREADOCENDataGridViewTextBoxColumn
+            // 
+            this.aREADOCENDataGridViewTextBoxColumn.DataPropertyName = "AREA_DOCEN";
+            this.aREADOCENDataGridViewTextBoxColumn.HeaderText = "AREA_DOCEN";
+            this.aREADOCENDataGridViewTextBoxColumn.Name = "aREADOCENDataGridViewTextBoxColumn";
+            this.aREADOCENDataGridViewTextBoxColumn.ReadOnly = true;
+            this.aREADOCENDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // iDUSUDataGridViewTextBoxColumn
+            // 
+            this.iDUSUDataGridViewTextBoxColumn.DataPropertyName = "ID_USU";
+            this.iDUSUDataGridViewTextBoxColumn.HeaderText = "ID_USU";
+            this.iDUSUDataGridViewTextBoxColumn.Name = "iDUSUDataGridViewTextBoxColumn";
+            this.iDUSUDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDUSUDataGridViewTextBoxColumn.Width = 71;
+            // 
             // FrmVistaDocen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +285,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridDocen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAESTROBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,5 +304,12 @@
         private System.Windows.Forms.ComboBox cboSeccion;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.DataGridView GridDocen;
+        private MATRICULADataSet mATRICULADataSet;
+        private System.Windows.Forms.BindingSource mAESTROBindingSource;
+        private MATRICULADataSetTableAdapters.MAESTROTableAdapter mAESTROTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDMAESTRODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDEMPLEADODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aREADOCENDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDUSUDataGridViewTextBoxColumn;
     }
 }

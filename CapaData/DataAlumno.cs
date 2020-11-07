@@ -51,7 +51,9 @@ namespace CapaData {
                 return int.Parse(cmd.Parameters[0].Value.ToString());
             } catch(Exception e) {
                 conectar.Close();
+                
                 return 0;
+                
             }
         }
 

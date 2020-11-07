@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace Matricula.Empleado {
     public partial class FrmIEEmpleado : Form {
+        FrmMenu menu = new FrmMenu();
         public FrmIEEmpleado() {
             InitializeComponent();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e) {
+            menu.Show();
+        }
 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

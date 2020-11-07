@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,13 +39,25 @@
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.mATRICULADataSet2 = new Matricula.MATRICULADataSet2();
+            this.aLUMNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aLUMNOTableAdapter = new Matricula.MATRICULADataSet2TableAdapters.ALUMNOTableAdapter();
+            this.iDALUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDAPODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cODALUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPERSODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDCARRERADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDUSUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridAlum)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pnSuperior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // GridAlum
             // 
+            this.GridAlum.AutoGenerateColumns = false;
             this.GridAlum.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.GridAlum.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridAlum.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
@@ -61,6 +74,14 @@
             this.GridAlum.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridAlum.ColumnHeadersHeight = 30;
             this.GridAlum.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.GridAlum.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDALUMDataGridViewTextBoxColumn,
+            this.iDAPODEDataGridViewTextBoxColumn,
+            this.cODALUMDataGridViewTextBoxColumn,
+            this.iDPERSODataGridViewTextBoxColumn,
+            this.iDCARRERADataGridViewTextBoxColumn,
+            this.iDUSUDataGridViewTextBoxColumn});
+            this.GridAlum.DataSource = this.aLUMNOBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,7 +94,6 @@
             this.GridAlum.GridColor = System.Drawing.Color.SteelBlue;
             this.GridAlum.Location = new System.Drawing.Point(2, 140);
             this.GridAlum.Name = "GridAlum";
-            this.GridAlum.ReadOnly = true;
             this.GridAlum.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(65)))), ((int)(((byte)(95)))));
@@ -206,6 +226,63 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
+            // mATRICULADataSet2
+            // 
+            this.mATRICULADataSet2.DataSetName = "MATRICULADataSet2";
+            this.mATRICULADataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // aLUMNOBindingSource
+            // 
+            this.aLUMNOBindingSource.DataMember = "ALUMNO";
+            this.aLUMNOBindingSource.DataSource = this.mATRICULADataSet2;
+            // 
+            // aLUMNOTableAdapter
+            // 
+            this.aLUMNOTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDALUMDataGridViewTextBoxColumn
+            // 
+            this.iDALUMDataGridViewTextBoxColumn.DataPropertyName = "ID_ALUM";
+            this.iDALUMDataGridViewTextBoxColumn.HeaderText = "ID_ALUM";
+            this.iDALUMDataGridViewTextBoxColumn.Name = "iDALUMDataGridViewTextBoxColumn";
+            this.iDALUMDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDALUMDataGridViewTextBoxColumn.Width = 82;
+            // 
+            // iDAPODEDataGridViewTextBoxColumn
+            // 
+            this.iDAPODEDataGridViewTextBoxColumn.DataPropertyName = "ID_APODE";
+            this.iDAPODEDataGridViewTextBoxColumn.HeaderText = "ID_APODE";
+            this.iDAPODEDataGridViewTextBoxColumn.Name = "iDAPODEDataGridViewTextBoxColumn";
+            this.iDAPODEDataGridViewTextBoxColumn.Width = 89;
+            // 
+            // cODALUMDataGridViewTextBoxColumn
+            // 
+            this.cODALUMDataGridViewTextBoxColumn.DataPropertyName = "COD_ALUM";
+            this.cODALUMDataGridViewTextBoxColumn.HeaderText = "COD_ALUM";
+            this.cODALUMDataGridViewTextBoxColumn.Name = "cODALUMDataGridViewTextBoxColumn";
+            this.cODALUMDataGridViewTextBoxColumn.Width = 97;
+            // 
+            // iDPERSODataGridViewTextBoxColumn
+            // 
+            this.iDPERSODataGridViewTextBoxColumn.DataPropertyName = "ID_PERSO";
+            this.iDPERSODataGridViewTextBoxColumn.HeaderText = "ID_PERSO";
+            this.iDPERSODataGridViewTextBoxColumn.Name = "iDPERSODataGridViewTextBoxColumn";
+            this.iDPERSODataGridViewTextBoxColumn.Width = 85;
+            // 
+            // iDCARRERADataGridViewTextBoxColumn
+            // 
+            this.iDCARRERADataGridViewTextBoxColumn.DataPropertyName = "ID_CARRERA";
+            this.iDCARRERADataGridViewTextBoxColumn.HeaderText = "ID_CARRERA";
+            this.iDCARRERADataGridViewTextBoxColumn.Name = "iDCARRERADataGridViewTextBoxColumn";
+            this.iDCARRERADataGridViewTextBoxColumn.Width = 103;
+            // 
+            // iDUSUDataGridViewTextBoxColumn
+            // 
+            this.iDUSUDataGridViewTextBoxColumn.DataPropertyName = "ID_USU";
+            this.iDUSUDataGridViewTextBoxColumn.HeaderText = "ID_USU";
+            this.iDUSUDataGridViewTextBoxColumn.Name = "iDUSUDataGridViewTextBoxColumn";
+            this.iDUSUDataGridViewTextBoxColumn.Width = 71;
+            // 
             // FrmVistaAlum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +306,8 @@
             this.groupBox1.PerformLayout();
             this.pnSuperior.ResumeLayout(false);
             this.pnSuperior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,5 +324,14 @@
         private System.Windows.Forms.Panel pnSuperior;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnMenu;
+        private MATRICULADataSet2 mATRICULADataSet2;
+        private System.Windows.Forms.BindingSource aLUMNOBindingSource;
+        private MATRICULADataSet2TableAdapters.ALUMNOTableAdapter aLUMNOTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDALUMDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDAPODEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cODALUMDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDPERSODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCARRERADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDUSUDataGridViewTextBoxColumn;
     }
 }

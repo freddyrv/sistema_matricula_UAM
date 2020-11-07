@@ -21,6 +21,8 @@ namespace Matricula.Docente {
         }
 
         private void FrmVistaDocen_Load(object sender, EventArgs e) {
+            // TODO: esta línea de código carga datos en la tabla 'mATRICULADataSet.MAESTRO' Puede moverla o quitarla según sea necesario.
+            this.mAESTROTableAdapter.Fill(this.mATRICULADataSet.MAESTRO);
             CapaNegocio.CNDocente obj = new CapaNegocio.CNDocente();
             GridDocen.DataSource = obj.ListarDocen();
         }

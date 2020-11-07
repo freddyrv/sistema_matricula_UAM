@@ -30,5 +30,17 @@ namespace Matricula.Cursos {
             MessageBox.Show("Volviendo al menu!");
             menu.Show();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmCursos_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'mATRICULADataSet1.CURSOS' Puede moverla o quitarla según sea necesario.
+            this.cURSOSTableAdapter.Fill(this.mATRICULADataSet1.CURSOS);
+
+        }
     }
 }

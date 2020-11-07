@@ -251,6 +251,21 @@
     <Compile Include="Login\FrmVistaUsu.Designer.cs">
       <DependentUpon>FrmVistaUsu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MATRICULADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MATRICULADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MATRICULADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MATRICULADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MATRICULADataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MATRICULADataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alumno\FrmAlumNoMatr.resx">
@@ -357,6 +372,39 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="MATRICULADataSet.xsc">
+      <DependentUpon>MATRICULADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MATRICULADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MATRICULADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MATRICULADataSet.xss">
+      <DependentUpon>MATRICULADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MATRICULADataSet1.xsc">
+      <DependentUpon>MATRICULADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MATRICULADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MATRICULADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MATRICULADataSet1.xss">
+      <DependentUpon>MATRICULADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MATRICULADataSet2.xsc">
+      <DependentUpon>MATRICULADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MATRICULADataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MATRICULADataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MATRICULADataSet2.xss">
+      <DependentUpon>MATRICULADataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

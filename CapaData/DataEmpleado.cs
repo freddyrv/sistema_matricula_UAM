@@ -16,5 +16,6 @@ namespace CapaData {
             ad.Fill(tb);
             return tb;
         }
+
     }
 }

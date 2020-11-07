@@ -16,6 +16,8 @@ namespace Matricula.Alumno {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
+            // TODO: esta línea de código carga datos en la tabla 'mATRICULADataSet2.ALUMNO' Puede moverla o quitarla según sea necesario.
+            this.aLUMNOTableAdapter.Fill(this.mATRICULADataSet2.ALUMNO);
             GridAlum.DataSource = obj.ListarAlum();
         }
 
