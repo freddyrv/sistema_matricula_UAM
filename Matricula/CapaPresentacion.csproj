@@ -266,6 +266,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MATRICULADataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MATRICULADataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MATRICULADataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alumno\FrmAlumNoMatr.resx">
@@ -404,6 +409,17 @@
     </None>
     <None Include="MATRICULADataSet2.xss">
       <DependentUpon>MATRICULADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MATRICULADataSet3.xsc">
+      <DependentUpon>MATRICULADataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MATRICULADataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MATRICULADataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MATRICULADataSet3.xss">
+      <DependentUpon>MATRICULADataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

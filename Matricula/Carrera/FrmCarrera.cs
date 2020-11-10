@@ -33,7 +33,7 @@ namespace Matricula.Cursos {
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void FrmCursos_Load(object sender, EventArgs e)
