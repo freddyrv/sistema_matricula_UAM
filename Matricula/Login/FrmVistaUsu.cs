@@ -22,5 +22,16 @@ namespace Matricula.Login {
         private void FrmVistaUsu_Load(object sender, EventArgs e) {
             GridUsu.DataSource = usu.ListarUsu();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            this.txtape.Text = "";
+            this.txtNom.Text = "";
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+   
+        }
     }
 }

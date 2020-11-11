@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaComun.Cache;
+using Matricula.Alumno;
 
 namespace Matricula {
     public partial class FrmMenu : Form {
@@ -123,6 +124,13 @@ namespace Matricula {
         private void pnMostrar_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void ingresarApoderadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIngApode ingApo = new FrmIngApode();
+
+            ingApo.Show();
         }
     }
 }
