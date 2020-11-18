@@ -48,39 +48,33 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(333, 406);
+            this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 7;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(299, 377);
+            this.pictureBox2.Size = new System.Drawing.Size(224, 306);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(407, 126);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(305, 102);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(596, 12);
+            this.groupBox1.Size = new System.Drawing.Size(447, 10);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(407, 210);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(305, 171);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(596, 12);
+            this.groupBox2.Size = new System.Drawing.Size(447, 10);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
@@ -90,11 +84,10 @@
             this.txtUsu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsu.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtUsu.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsu.Location = new System.Drawing.Point(407, 103);
-            this.txtUsu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsu.Location = new System.Drawing.Point(305, 84);
             this.txtUsu.Multiline = true;
             this.txtUsu.Name = "txtUsu";
-            this.txtUsu.Size = new System.Drawing.Size(596, 30);
+            this.txtUsu.Size = new System.Drawing.Size(447, 24);
             this.txtUsu.TabIndex = 10;
             this.txtUsu.Text = "Usuario";
             this.txtUsu.Enter += new System.EventHandler(this.TxtUsu_Enter);
@@ -106,11 +99,9 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtPass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPass.Location = new System.Drawing.Point(407, 190);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtPass.Multiline = true;
+            this.txtPass.Location = new System.Drawing.Point(305, 154);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(596, 28);
+            this.txtPass.Size = new System.Drawing.Size(447, 20);
             this.txtPass.TabIndex = 11;
             this.txtPass.Text = "Password";
             this.txtPass.UseSystemPasswordChar = true;
@@ -122,10 +113,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(644, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(483, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 47);
+            this.label1.Size = new System.Drawing.Size(99, 38);
             this.label1.TabIndex = 12;
             this.label1.Text = "Login";
             // 
@@ -136,10 +126,9 @@
             this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.linkLabel1.LinkColor = System.Drawing.Color.DimGray;
-            this.linkLabel1.Location = new System.Drawing.Point(599, 354);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(449, 288);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(234, 21);
+            this.linkLabel1.Size = new System.Drawing.Size(179, 17);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Olvidaste tu contraseña?";
@@ -149,10 +138,9 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1016, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(762, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 22);
+            this.pictureBox1.Size = new System.Drawing.Size(17, 18);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -167,10 +155,9 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.btnIngresar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnIngresar.Location = new System.Drawing.Point(407, 286);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIngresar.Location = new System.Drawing.Point(305, 232);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(596, 49);
+            this.btnIngresar.Size = new System.Drawing.Size(447, 40);
             this.btnIngresar.TabIndex = 16;
             this.btnIngresar.Text = "Iniciar Sesion";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -189,20 +176,19 @@
             // 
             this.lblErrorSesion.AutoSize = true;
             this.lblErrorSesion.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblErrorSesion.Location = new System.Drawing.Point(403, 246);
-            this.lblErrorSesion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblErrorSesion.Location = new System.Drawing.Point(302, 200);
             this.lblErrorSesion.Name = "lblErrorSesion";
-            this.lblErrorSesion.Size = new System.Drawing.Size(46, 17);
+            this.lblErrorSesion.Size = new System.Drawing.Size(35, 13);
             this.lblErrorSesion.TabIndex = 17;
             this.lblErrorSesion.Text = "label2";
             this.lblErrorSesion.Visible = false;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(1040, 406);
+            this.ClientSize = new System.Drawing.Size(780, 330);
             this.Controls.Add(this.lblErrorSesion);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.pictureBox1);
@@ -214,7 +200,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLogin";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
