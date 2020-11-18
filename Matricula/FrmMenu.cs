@@ -92,7 +92,9 @@ namespace Matricula {
         }
 
         private void SalisToolStripMenuItem_Click(object sender, EventArgs e) {
+            MessageBox.Show("Hasta pronto!");
             Application.Exit();
+           
         }
 
         private void CrearUnBackUpToolStripMenuItem_Click(object sender, EventArgs e) {

@@ -40,7 +40,6 @@
             this.salisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnEmple = new System.Windows.Forms.Button();
             this.btnDocen = new System.Windows.Forms.Button();
             this.btnUsu = new System.Windows.Forms.Button();
@@ -62,11 +61,6 @@
             this.lblNomUsu = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnMostrar = new System.Windows.Forms.Panel();
-            this.reporteDeEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteDeAlumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteDeDocentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteDeMatriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -87,7 +81,6 @@
             this.profesoresToolStripMenuItem,
             this.matriculaToolStripMenuItem,
             this.clasesToolStripMenuItem,
-            this.reportesToolStripMenuItem,
             this.salisToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -138,13 +131,13 @@
             this.ingresarAlumnoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarApoderadoToolStripMenuItem});
             this.ingresarAlumnoToolStripMenuItem.Name = "ingresarAlumnoToolStripMenuItem";
-            this.ingresarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ingresarAlumnoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.ingresarAlumnoToolStripMenuItem.Text = "Registrar Alumno";
             // 
             // ingresarApoderadoToolStripMenuItem
             // 
             this.ingresarApoderadoToolStripMenuItem.Name = "ingresarApoderadoToolStripMenuItem";
-            this.ingresarApoderadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ingresarApoderadoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.ingresarApoderadoToolStripMenuItem.Text = "Ingresar Apoderado";
             this.ingresarApoderadoToolStripMenuItem.Click += new System.EventHandler(this.ingresarApoderadoToolStripMenuItem_Click);
             // 
@@ -159,7 +152,7 @@
             // registrarDocenteToolStripMenuItem
             // 
             this.registrarDocenteToolStripMenuItem.Name = "registrarDocenteToolStripMenuItem";
-            this.registrarDocenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarDocenteToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.registrarDocenteToolStripMenuItem.Text = "Registrar Docente";
             this.registrarDocenteToolStripMenuItem.Click += new System.EventHandler(this.RegistrarDocenteToolStripMenuItem_Click);
             // 
@@ -208,7 +201,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.btnEmple);
             this.groupBox1.Controls.Add(this.btnDocen);
             this.groupBox1.Controls.Add(this.btnUsu);
@@ -219,23 +212,7 @@
             this.groupBox1.Size = new System.Drawing.Size(199, 416);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Listado - Reporte";
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(9, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 40);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Reportes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.groupBox1.Text = "Listado ";
             // 
             // btnEmple
             // 
@@ -381,9 +358,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(28, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 24);
+            this.label2.Size = new System.Drawing.Size(442, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Desarrollado: Joseph R, - -";
+            this.label2.Text = "Desarrollado: Joseph R, Luis B, Freddy R, Fabian G";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -494,41 +471,6 @@
             this.pnMostrar.TabIndex = 14;
             this.pnMostrar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnMostrar_Paint);
             // 
-            // reporteDeEmpleadosToolStripMenuItem
-            // 
-            this.reporteDeEmpleadosToolStripMenuItem.Name = "reporteDeEmpleadosToolStripMenuItem";
-            this.reporteDeEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.reporteDeEmpleadosToolStripMenuItem.Text = "Reporte de Empleados";
-            // 
-            // reporteDeAlumnosToolStripMenuItem
-            // 
-            this.reporteDeAlumnosToolStripMenuItem.Name = "reporteDeAlumnosToolStripMenuItem";
-            this.reporteDeAlumnosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.reporteDeAlumnosToolStripMenuItem.Text = "Reporte de Alumnos";
-            // 
-            // reporteDeDocentesToolStripMenuItem
-            // 
-            this.reporteDeDocentesToolStripMenuItem.Name = "reporteDeDocentesToolStripMenuItem";
-            this.reporteDeDocentesToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.reporteDeDocentesToolStripMenuItem.Text = "Reporte de Docentes";
-            // 
-            // reporteDeMatriculaToolStripMenuItem
-            // 
-            this.reporteDeMatriculaToolStripMenuItem.Name = "reporteDeMatriculaToolStripMenuItem";
-            this.reporteDeMatriculaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.reporteDeMatriculaToolStripMenuItem.Text = "Reporte de Matricula";
-            // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reporteDeEmpleadosToolStripMenuItem,
-            this.reporteDeAlumnosToolStripMenuItem,
-            this.reporteDeDocentesToolStripMenuItem,
-            this.reporteDeMatriculaToolStripMenuItem});
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.reportesToolStripMenuItem.Text = "Reportes";
-            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -596,16 +538,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pnMostrar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblPosicio;
         private System.Windows.Forms.Label lblCod;
         private System.Windows.Forms.Label lblNomUsu;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteDeEmpleadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteDeAlumnosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteDeDocentesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteDeMatriculaToolStripMenuItem;
     }
 }

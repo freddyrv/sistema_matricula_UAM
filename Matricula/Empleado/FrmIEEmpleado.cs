@@ -21,7 +21,10 @@ namespace Matricula.Empleado {
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-           
+            CapaNegocio.CNEmpleado obj= new CapaNegocio.CNEmpleado();
+            
+            MessageBox.Show("Empleado Ingresado");
+            menu.Show();
         }
     }
 }
