@@ -25,5 +25,34 @@ namespace Matricula.Docente {
                 this.Close();
             }
         }
+
+        private void btnNotas_Click(object sender, EventArgs e)
+        {
+            FrmNotas nota = new FrmNotas();
+            this.Hide();
+            nota.ShowDialog();
+            this.Show();
+
+        }
+
+        private void btnInformacion_Click(object sender, EventArgs e)
+        {
+            FrmInfoDocente info = new FrmInfoDocente();
+            this.Hide();
+            info.ShowDialog();
+            this.Show();
+
+
+        }
+
+        private void btnHorario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClases_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

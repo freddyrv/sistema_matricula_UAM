@@ -38,5 +38,13 @@ namespace Matricula.Alumno {
         private void BtnEmple_Click(object sender, EventArgs e) {
 
         }
+
+        private void btnMatricula_Click(object sender, EventArgs e)
+        {
+            //FrmMatricula matri = new FrmMatricula();
+            //this.Hide();
+            //matri.ShowDialog();
+            //matri.Show();
+        }
     }
 }

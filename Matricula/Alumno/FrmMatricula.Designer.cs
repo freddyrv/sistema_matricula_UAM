@@ -153,17 +153,7 @@
             this.label12.Size = new System.Drawing.Size(64, 31);
             this.label12.TabIndex = 9;
             this.label12.Text = "DNI:";
-            // 
-            // btnAlumnos
-            // 
-            this.btnAlumnos.Image = ((System.Drawing.Image)(resources.GetObject("btnAlumnos.Image")));
-            this.btnAlumnos.Location = new System.Drawing.Point(383, 53);
-            this.btnAlumnos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAlumnos.Name = "btnAlumnos";
-            this.btnAlumnos.Size = new System.Drawing.Size(49, 49);
-            this.btnAlumnos.TabIndex = 8;
-            this.btnAlumnos.UseVisualStyleBackColor = true;
-            this.btnAlumnos.Click += new System.EventHandler(this.Button4_Click);
+
             // 
             // txtCarrera
             // 
@@ -287,17 +277,7 @@
             this.lblSec.TabIndex = 10;
             this.lblSec.Text = "-";
             this.lblSec.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(383, 145);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 49);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+
             // 
             // cboPeriodo
             // 

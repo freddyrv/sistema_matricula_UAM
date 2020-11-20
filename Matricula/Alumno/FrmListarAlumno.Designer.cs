@@ -329,18 +329,7 @@
             this.GridLisAlum.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridLisAlum.Size = new System.Drawing.Size(1040, 539);
             this.GridLisAlum.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(291, 875);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(259, 28);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Ver Alumnos No Matriculados";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+
             // 
             // FrmListarAlumno
             // 

@@ -25,24 +25,10 @@ namespace Matricula.Alumno {
             cboCiclo.DataSource = obj.ListarCiclo();
         }
 
-        private void Button1_Click(object sender, EventArgs e) {
-            FrmSeccion obj = new FrmSeccion();
-            obj.Show();
-        }
-
         private void BtnSalir_Click(object sender, EventArgs e) {
             this.Close();
         }
 
-        private void Button4_Click(object sender, EventArgs e) {
-            FrmAlumNoMatr obj = new FrmAlumNoMatr();
-            obj.Show();
-        }
-
-        private void BtnSeccion_Click(object sender, EventArgs e) {
-            FrmSeccion obj = new FrmSeccion();
-            obj.Show();
-        }
 
         private void BtnGuardar_Click(object sender, EventArgs e) {
             CapaNegocio.CNAlumno obj = new CapaNegocio.CNAlumno();

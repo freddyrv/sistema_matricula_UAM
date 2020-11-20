@@ -23,33 +23,40 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNotas));
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSociales = new System.Windows.Forms.TextBox();
+            this.txtIngles = new System.Windows.Forms.TextBox();
+            this.txtCiencias = new System.Windows.Forms.TextBox();
+            this.txtMatematica = new System.Windows.Forms.TextBox();
+            this.txtEspañol = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cboAlum = new System.Windows.Forms.ComboBox();
+            this.aLUMNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mATRICULADataSet4 = new Matricula.MATRICULADataSet4();
             this.cboSeccion = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.GridNotas = new System.Windows.Forms.DataGridView();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.aLUMNOTableAdapter = new Matricula.MATRICULADataSet4TableAdapters.ALUMNOTableAdapter();
             this.pnSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet4)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridNotas)).BeginInit();
             this.SuspendLayout();
@@ -89,11 +96,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtSociales);
+            this.groupBox1.Controls.Add(this.txtIngles);
+            this.groupBox1.Controls.Add(this.txtCiencias);
+            this.groupBox1.Controls.Add(this.txtMatematica);
+            this.groupBox1.Controls.Add(this.txtEspañol);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -111,45 +118,45 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
-            // textBox5
+            // txtSociales
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(843, 101);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(42, 27);
-            this.textBox5.TabIndex = 23;
+            this.txtSociales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSociales.Location = new System.Drawing.Point(843, 101);
+            this.txtSociales.Name = "txtSociales";
+            this.txtSociales.Size = new System.Drawing.Size(42, 27);
+            this.txtSociales.TabIndex = 23;
             // 
-            // textBox4
+            // txtIngles
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(661, 101);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(42, 27);
-            this.textBox4.TabIndex = 22;
+            this.txtIngles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngles.Location = new System.Drawing.Point(661, 101);
+            this.txtIngles.Name = "txtIngles";
+            this.txtIngles.Size = new System.Drawing.Size(42, 27);
+            this.txtIngles.TabIndex = 22;
             // 
-            // textBox3
+            // txtCiencias
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(481, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(42, 27);
-            this.textBox3.TabIndex = 21;
+            this.txtCiencias.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCiencias.Location = new System.Drawing.Point(481, 101);
+            this.txtCiencias.Name = "txtCiencias";
+            this.txtCiencias.Size = new System.Drawing.Size(42, 27);
+            this.txtCiencias.TabIndex = 21;
             // 
-            // textBox2
+            // txtMatematica
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(300, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(42, 27);
-            this.textBox2.TabIndex = 20;
+            this.txtMatematica.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatematica.Location = new System.Drawing.Point(300, 101);
+            this.txtMatematica.Name = "txtMatematica";
+            this.txtMatematica.Size = new System.Drawing.Size(42, 27);
+            this.txtMatematica.TabIndex = 20;
             // 
-            // textBox1
+            // txtEspañol
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(124, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(42, 27);
-            this.textBox1.TabIndex = 19;
+            this.txtEspañol.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEspañol.Location = new System.Drawing.Point(124, 101);
+            this.txtEspañol.Name = "txtEspañol";
+            this.txtEspañol.Size = new System.Drawing.Size(42, 27);
+            this.txtEspañol.TabIndex = 19;
             // 
             // label7
             // 
@@ -203,15 +210,35 @@
             // 
             // cboAlum
             // 
+            this.cboAlum.DataSource = this.aLUMNOBindingSource;
+            this.cboAlum.DisplayMember = "COD_ALUM";
             this.cboAlum.FormattingEnabled = true;
             this.cboAlum.Location = new System.Drawing.Point(632, 30);
             this.cboAlum.Name = "cboAlum";
             this.cboAlum.Size = new System.Drawing.Size(129, 31);
             this.cboAlum.TabIndex = 13;
+            this.cboAlum.ValueMember = "COD_ALUM";
+            // 
+            // aLUMNOBindingSource
+            // 
+            this.aLUMNOBindingSource.DataMember = "ALUMNO";
+            this.aLUMNOBindingSource.DataSource = this.mATRICULADataSet4;
+            // 
+            // mATRICULADataSet4
+            // 
+            this.mATRICULADataSet4.DataSetName = "MATRICULADataSet4";
+            this.mATRICULADataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cboSeccion
             // 
             this.cboSeccion.FormattingEnabled = true;
+            this.cboSeccion.Items.AddRange(new object[] {
+            "Sec-1",
+            "Sec-2",
+            "Sec-3",
+            "Sec-4",
+            "Sec-5",
+            "Sec-6"});
             this.cboSeccion.Location = new System.Drawing.Point(265, 30);
             this.cboSeccion.Name = "cboSeccion";
             this.cboSeccion.Size = new System.Drawing.Size(129, 31);
@@ -240,6 +267,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.Controls.Add(this.btnLimpiar);
             this.groupBox2.Controls.Add(this.btnEditar);
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -251,6 +279,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mantenimiento";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.Red;
+            this.btnLimpiar.Location = new System.Drawing.Point(470, 31);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(97, 38);
+            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.SteelBlue;
@@ -261,7 +300,7 @@
             this.btnEditar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(627, 31);
+            this.btnEditar.Location = new System.Drawing.Point(279, 31);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(175, 38);
             this.btnEditar.TabIndex = 2;
@@ -316,6 +355,10 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
+            // aLUMNOTableAdapter
+            // 
+            this.aLUMNOTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,11 +372,14 @@
             this.Name = "FrmNotas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNotas";
+            this.Load += new System.EventHandler(this.FrmNotas_Load);
             this.pnSuperior.ResumeLayout(false);
             this.pnSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet4)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridNotas)).EndInit();
             this.ResumeLayout(false);
@@ -354,16 +400,20 @@
         private System.Windows.Forms.DataGridView GridNotas;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ComboBox cboSeccion;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSociales;
+        private System.Windows.Forms.TextBox txtIngles;
+        private System.Windows.Forms.TextBox txtCiencias;
+        private System.Windows.Forms.TextBox txtMatematica;
+        private System.Windows.Forms.TextBox txtEspañol;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboAlum;
+        private MATRICULADataSet4 mATRICULADataSet4;
+        private System.Windows.Forms.BindingSource aLUMNOBindingSource;
+        private MATRICULADataSet4TableAdapters.ALUMNOTableAdapter aLUMNOTableAdapter;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

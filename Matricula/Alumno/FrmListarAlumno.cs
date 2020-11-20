@@ -77,9 +77,6 @@ namespace Matricula.Alumno {
             this.Close();
         }
 
-        private void Button1_Click_1(object sender, EventArgs e) {
-            Alumno.FrmAlumNoMatr obj = new FrmAlumNoMatr();
-            obj.Show();
-        }
+
     }
 }
