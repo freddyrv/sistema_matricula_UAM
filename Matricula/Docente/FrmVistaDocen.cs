@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Matricula.Docente {
     public partial class FrmVistaDocen : Form {
+        CapaNegocio.CNDocente obj = new CapaNegocio.CNDocente();
         public FrmVistaDocen() {
             InitializeComponent();
         }
@@ -21,13 +22,13 @@ namespace Matricula.Docente {
         }
 
         private void FrmVistaDocen_Load(object sender, EventArgs e) {
-            // TODO: esta línea de código carga datos en la tabla 'mATRICULADataSet.MAESTRO' Puede moverla o quitarla según sea necesario.
-            this.mAESTROTableAdapter.Fill(this.mATRICULADataSet.MAESTRO);
-           
+
+
+            GridDocen.DataSource = obj.ListarDocen();
         }
 
         private void FrmVistaDocen_Activated(object sender, EventArgs e) {
-            CapaNegocio.CNDocente obj = new CapaNegocio.CNDocente();
+
             GridDocen.DataSource = obj.ListarDocen();
         }
 
@@ -35,6 +36,16 @@ namespace Matricula.Docente {
             FrmInfoDocente info = new FrmInfoDocente();
             info.lblDocente.Text = GridDocen.CurrentRow.Cells[0].Value.ToString();
             info.Show();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            this.txtID.Text = "";
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

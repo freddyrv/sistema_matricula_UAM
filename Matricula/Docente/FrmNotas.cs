@@ -20,8 +20,7 @@ namespace Matricula.Docente {
 
         private void FrmNotas_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'mATRICULADataSet4.ALUMNO' Puede moverla o quitarla según sea necesario.
-            this.aLUMNOTableAdapter.Fill(this.mATRICULADataSet4.ALUMNO);
+        
 
         }
 

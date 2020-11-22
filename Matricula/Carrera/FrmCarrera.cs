@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace Matricula.Cursos {
     public partial class FrmCursos : Form {
         FrmMenu menu = new FrmMenu();
+        CapaNegocio.CNGeneral obj = new CapaNegocio.CNGeneral();
         public FrmCursos() {
             InitializeComponent();
         }
@@ -38,8 +39,7 @@ namespace Matricula.Cursos {
 
         private void FrmCursos_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'mATRICULADataSet1.CURSOS' Puede moverla o quitarla según sea necesario.
-            this.cURSOSTableAdapter.Fill(this.mATRICULADataSet1.CURSOS);
+            dataGridView1.DataSource = obj.ListarCarrera();
 
         }
     }

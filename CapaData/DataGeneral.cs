@@ -7,43 +7,52 @@ using System.Data;
 using System.Data.SqlClient;
 
 namespace CapaData {
-    public class DataGeneral {
+    public class DataGeneral
+    {
         SqlConnection conectar = new SqlConnection();
         DataTable tb = new DataTable();
-        public DataTable ListarDis() {
+        public DataTable ListarDis()
+        {
             conectar.ConnectionString = DataConexion.cn;
             SqlDataAdapter ra = new SqlDataAdapter("SELECT * FROM DISTRITO", conectar);
             ra.Fill(tb);
             return tb;
         }
 
-        public DataTable ultApode() {
+        public DataTable ultApode()
+        {
             conectar.ConnectionString = DataConexion.cn;
             SqlDataAdapter ra = new SqlDataAdapter("ULTIMA_APODE", conectar);
             ra.Fill(tb);
             return tb;
         }
 
-        public DataTable ultPerso() {
+        public DataTable ultPerso()
+        {
             conectar.ConnectionString = DataConexion.cn;
             SqlDataAdapter ra = new SqlDataAdapter("ULTIMA_PERSO", conectar);
             ra.Fill(tb);
             return tb;
         }
 
-        public DataTable ListarApoS() {
+        public DataTable ListarApoS()
+        {
             conectar.ConnectionString = DataConexion.cn;
             SqlDataAdapter da = new SqlDataAdapter("APODE_SIN", conectar);
             da.Fill(tb);
             return tb;
         }
 
-        public DataTable ListarCarrera() {
+        public DataTable ListarCarrera()
+        {
             conectar.ConnectionString = DataConexion.cn;
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM CARRERA", conectar);
             da.Fill(tb);
             return tb;
         }
+    
+    
+    
 
         public DataTable ListarCiclo() {
             conectar.ConnectionString = DataConexion.cn;

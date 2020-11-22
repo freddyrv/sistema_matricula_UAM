@@ -29,35 +29,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GridAlum = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtape = new System.Windows.Forms.TextBox();
-            this.cboSeccion = new System.Windows.Forms.ComboBox();
+            this.aLUMNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCod = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pnSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.mATRICULADataSet2 = new Matricula.MATRICULADataSet2();
-            this.aLUMNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aLUMNOTableAdapter = new Matricula.MATRICULADataSet2TableAdapters.ALUMNOTableAdapter();
-            this.iDALUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDAPODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cODALUMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPERSODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDCARRERADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDUSUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridAlum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pnSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // GridAlum
             // 
-            this.GridAlum.AutoGenerateColumns = false;
+            this.GridAlum.AllowUserToAddRows = false;
+            this.GridAlum.AllowUserToDeleteRows = false;
             this.GridAlum.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.GridAlum.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridAlum.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
@@ -74,14 +64,6 @@
             this.GridAlum.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridAlum.ColumnHeadersHeight = 30;
             this.GridAlum.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.GridAlum.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDALUMDataGridViewTextBoxColumn,
-            this.iDAPODEDataGridViewTextBoxColumn,
-            this.cODALUMDataGridViewTextBoxColumn,
-            this.iDPERSODataGridViewTextBoxColumn,
-            this.iDCARRERADataGridViewTextBoxColumn,
-            this.iDUSUDataGridViewTextBoxColumn});
-            this.GridAlum.DataSource = this.aLUMNOBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -94,6 +76,7 @@
             this.GridAlum.GridColor = System.Drawing.Color.SteelBlue;
             this.GridAlum.Location = new System.Drawing.Point(2, 140);
             this.GridAlum.Name = "GridAlum";
+            this.GridAlum.ReadOnly = true;
             this.GridAlum.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(65)))), ((int)(((byte)(95)))));
@@ -117,70 +100,31 @@
             this.GridAlum.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridAlum_CellContentClick);
             this.GridAlum.DoubleClick += new System.EventHandler(this.View1_DoubleClick);
             // 
-            // label1
+            // txtID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label1.Location = new System.Drawing.Point(47, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Seccion:";
-            // 
-            // txtape
-            // 
-            this.txtape.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtape.Location = new System.Drawing.Point(451, 31);
-            this.txtape.Name = "txtape";
-            this.txtape.Size = new System.Drawing.Size(128, 27);
-            this.txtape.TabIndex = 2;
-            this.txtape.TextChanged += new System.EventHandler(this.Txtape_TextChanged);
-            // 
-            // cboSeccion
-            // 
-            this.cboSeccion.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.cboSeccion.FormattingEnabled = true;
-            this.cboSeccion.Location = new System.Drawing.Point(145, 31);
-            this.cboSeccion.Name = "cboSeccion";
-            this.cboSeccion.Size = new System.Drawing.Size(126, 29);
-            this.cboSeccion.TabIndex = 3;
+            this.txtID.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txtID.Location = new System.Drawing.Point(47, 31);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(128, 27);
+            this.txtID.TabIndex = 2;
+            this.txtID.TextChanged += new System.EventHandler(this.Txtape_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label2.Location = new System.Drawing.Point(347, 34);
+            this.label2.Location = new System.Drawing.Point(10, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 21);
+            this.label2.Size = new System.Drawing.Size(31, 21);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Apellido:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label3.Location = new System.Drawing.Point(659, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 21);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Codigo:";
-            // 
-            // txtCod
-            // 
-            this.txtCod.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtCod.Location = new System.Drawing.Point(761, 31);
-            this.txtCod.Name = "txtCod";
-            this.txtCod.Size = new System.Drawing.Size(119, 27);
-            this.txtCod.TabIndex = 6;
+            this.label2.Text = "ID:";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.groupBox1.Controls.Add(this.txtape);
-            this.groupBox1.Controls.Add(this.txtCod);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.cboSeccion);
+            this.groupBox1.Controls.Add(this.btnLimpiar);
+            this.groupBox1.Controls.Add(this.btnBuscar);
+            this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
@@ -226,62 +170,27 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
-            // mATRICULADataSet2
+            // btnBuscar
             // 
-            this.mATRICULADataSet2.DataSetName = "MATRICULADataSet2";
-            this.mATRICULADataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(181, 31);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(97, 27);
+            this.btnBuscar.TabIndex = 5;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // aLUMNOBindingSource
+            // btnLimpiar
             // 
-            this.aLUMNOBindingSource.DataMember = "ALUMNO";
-            this.aLUMNOBindingSource.DataSource = this.mATRICULADataSet2;
-            // 
-            // aLUMNOTableAdapter
-            // 
-            this.aLUMNOTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDALUMDataGridViewTextBoxColumn
-            // 
-            this.iDALUMDataGridViewTextBoxColumn.DataPropertyName = "ID_ALUM";
-            this.iDALUMDataGridViewTextBoxColumn.HeaderText = "ID_ALUM";
-            this.iDALUMDataGridViewTextBoxColumn.Name = "iDALUMDataGridViewTextBoxColumn";
-            this.iDALUMDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDALUMDataGridViewTextBoxColumn.Width = 82;
-            // 
-            // iDAPODEDataGridViewTextBoxColumn
-            // 
-            this.iDAPODEDataGridViewTextBoxColumn.DataPropertyName = "ID_APODE";
-            this.iDAPODEDataGridViewTextBoxColumn.HeaderText = "ID_APODE";
-            this.iDAPODEDataGridViewTextBoxColumn.Name = "iDAPODEDataGridViewTextBoxColumn";
-            this.iDAPODEDataGridViewTextBoxColumn.Width = 89;
-            // 
-            // cODALUMDataGridViewTextBoxColumn
-            // 
-            this.cODALUMDataGridViewTextBoxColumn.DataPropertyName = "COD_ALUM";
-            this.cODALUMDataGridViewTextBoxColumn.HeaderText = "COD_ALUM";
-            this.cODALUMDataGridViewTextBoxColumn.Name = "cODALUMDataGridViewTextBoxColumn";
-            this.cODALUMDataGridViewTextBoxColumn.Width = 97;
-            // 
-            // iDPERSODataGridViewTextBoxColumn
-            // 
-            this.iDPERSODataGridViewTextBoxColumn.DataPropertyName = "ID_PERSO";
-            this.iDPERSODataGridViewTextBoxColumn.HeaderText = "ID_PERSO";
-            this.iDPERSODataGridViewTextBoxColumn.Name = "iDPERSODataGridViewTextBoxColumn";
-            this.iDPERSODataGridViewTextBoxColumn.Width = 85;
-            // 
-            // iDCARRERADataGridViewTextBoxColumn
-            // 
-            this.iDCARRERADataGridViewTextBoxColumn.DataPropertyName = "ID_CARRERA";
-            this.iDCARRERADataGridViewTextBoxColumn.HeaderText = "ID_CARRERA";
-            this.iDCARRERADataGridViewTextBoxColumn.Name = "iDCARRERADataGridViewTextBoxColumn";
-            this.iDCARRERADataGridViewTextBoxColumn.Width = 103;
-            // 
-            // iDUSUDataGridViewTextBoxColumn
-            // 
-            this.iDUSUDataGridViewTextBoxColumn.DataPropertyName = "ID_USU";
-            this.iDUSUDataGridViewTextBoxColumn.HeaderText = "ID_USU";
-            this.iDUSUDataGridViewTextBoxColumn.Name = "iDUSUDataGridViewTextBoxColumn";
-            this.iDUSUDataGridViewTextBoxColumn.Width = 71;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpiar.Location = new System.Drawing.Point(284, 31);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(91, 27);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // FrmVistaAlum
             // 
@@ -302,36 +211,26 @@
             this.Activated += new System.EventHandler(this.FrmVistaAlum_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridAlum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.pnSuperior.ResumeLayout(false);
             this.pnSuperior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtape;
-        private System.Windows.Forms.ComboBox cboSeccion;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.DataGridView GridAlum;
         private System.Windows.Forms.Panel pnSuperior;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnMenu;
-        private MATRICULADataSet2 mATRICULADataSet2;
+        
         private System.Windows.Forms.BindingSource aLUMNOBindingSource;
-        private MATRICULADataSet2TableAdapters.ALUMNOTableAdapter aLUMNOTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDALUMDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDAPODEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cODALUMDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDPERSODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDCARRERADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDUSUDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

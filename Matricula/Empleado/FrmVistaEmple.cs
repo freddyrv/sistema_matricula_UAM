@@ -35,5 +35,16 @@ namespace Matricula.Empleado {
         private void FrmVistaEmple_Load(object sender, EventArgs e) {
             GridEmple.DataSource = emple.ListarEmple();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            this.txtNombre.Text = "";
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+           // CapaNegocio.CNEmpleado obj = new CapaNegocio.CNEmpleado();
+            //GridEmple.DataSource = obj.
+        }
     }
 }

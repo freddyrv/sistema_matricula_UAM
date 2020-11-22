@@ -47,5 +47,6 @@ namespace CapaNegocio {
         public DataTable ListarEmpleados() {
             return obj.ListarEmpleados();
         }
+ 
     }
 }

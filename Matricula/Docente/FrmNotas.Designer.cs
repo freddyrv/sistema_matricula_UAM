@@ -41,7 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cboAlum = new System.Windows.Forms.ComboBox();
             this.aLUMNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mATRICULADataSet4 = new Matricula.MATRICULADataSet4();
+            
             this.cboSeccion = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,12 +51,11 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.GridNotas = new System.Windows.Forms.DataGridView();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.aLUMNOTableAdapter = new Matricula.MATRICULADataSet4TableAdapters.ALUMNOTableAdapter();
+         
             this.pnSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet4)).BeginInit();
+          
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridNotas)).BeginInit();
             this.SuspendLayout();
@@ -218,16 +217,7 @@
             this.cboAlum.Size = new System.Drawing.Size(129, 31);
             this.cboAlum.TabIndex = 13;
             this.cboAlum.ValueMember = "COD_ALUM";
-            // 
-            // aLUMNOBindingSource
-            // 
-            this.aLUMNOBindingSource.DataMember = "ALUMNO";
-            this.aLUMNOBindingSource.DataSource = this.mATRICULADataSet4;
-            // 
-            // mATRICULADataSet4
-            // 
-            this.mATRICULADataSet4.DataSetName = "MATRICULADataSet4";
-            this.mATRICULADataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // cboSeccion
             // 
@@ -354,10 +344,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
-            // aLUMNOTableAdapter
-            // 
-            this.aLUMNOTableAdapter.ClearBeforeFill = true;
+       
             // 
             // FrmNotas
             // 
@@ -378,8 +365,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aLUMNOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mATRICULADataSet4)).EndInit();
+
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridNotas)).EndInit();
             this.ResumeLayout(false);
@@ -411,9 +397,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboAlum;
-        private MATRICULADataSet4 mATRICULADataSet4;
+        
         private System.Windows.Forms.BindingSource aLUMNOBindingSource;
-        private MATRICULADataSet4TableAdapters.ALUMNOTableAdapter aLUMNOTableAdapter;
+        
         private System.Windows.Forms.Button btnLimpiar;
     }
 }
